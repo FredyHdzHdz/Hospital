@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "9aabfc04-1171-4dd1-8e84-3fc21c4ab05a",
+		"name": "Back End",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28124574"
+	},
+	"item": [
+		{
+			"name": "Especialidades",
+			"item": [
+				{
+					"name": "Search all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{Tokenmanual}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"nombre\":\"prueba prueba prueba\",\r\n \"telefono\":\"5523568985\",\r\n \"email\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/10.0.0/hospital/especialidades/search",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"10.0.0",
+								"hospital",
+								"especialidades",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search filtro",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{Tokenmanual}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"nombre\":\"prueba prueba prueba\",\r\n \"telefono\":\"5523568985\",\r\n \"email\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/10.0.0/hospital/especialidades/search",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"10.0.0",
+								"hospital",
+								"especialidades",
+								"search"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "http://localhost:8080",
+			"type": "string"
+		},
+		{
+			"key": "Tokenmanual",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcmluY2lwYWxJZCI6IjQ1MjAiLCJpc3MiOiIiLCJjbGllbnRfaWQiOiIyOSIsInNjb3BlcyI6WyJhdXRoLnJlYWQubWVudSIsImF1dGgucmVhZC5zY29wZXMiLCJhdXRoLnJlYWQudXNlcnMiLCJhdXRoLnJlYWQuYXBpcyIsImF1dGgucmVhZC5wZXJmaWxlcyIsImF1dGgud3JpdGUudXNlcnMiLCJhdXRoLndyaXRlLnBlcmZpbGVzIiwic2twLnByb3NwZWN0b3MucmVhZCIsInNrcC5wcm9zcGVjdG9zLndyaXRlIiwiYmkuaW5kaWNhZG9yZXMiXSwiaWRiYXNlZGVkYXRvcyI6IiIsImlkbml2ZWxhY2Nlc28iOiIxIiwiaWF0IjoxNzA0NDAyMDk2LCJleHAiOjE3MTQ0MDU2OTZ9.oqCCuceY7GnDSpFkRYDxRVK8Bk2g5HwZBHJcxSPV848",
+			"type": "string"
+		}
+	]
+}
